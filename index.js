@@ -140,14 +140,9 @@ function addResult(itemName,courentResult){
     const button=document.createElement('button');
     li.innerText=itemName+'  '+courentResult+'cm² ';
     button.innerText='ConvertMeter';
-    button.classList.add('convertBtn')
+    button.classList.add('convertBtn');
     li.appendChild(button);
     li.classList.add('liststyle');
     calculationList.appendChild(li);
-  return button;
 }
-const button=addResult();
-button.addEventListener('click',function updateElement(courentResult){
-    console.log(courentResult.innerText);
-})
 
