@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Geometry</title>
+</head>
+<body>
+    <header>
+        <div class="container mx-auto">
+            <div class="mb-10 header-area bg-green-300 h-28 flex justify-between items-center bg-pink">
+                <div class="header-logo ml-10">
+                    <h2 class="font-bold text-4xl">Interactive </h2>
+                     <h2 class="text-4xl">Geometry Genius</h2>
+                </div>
+                <div class=" header-btn bg-red-400 py-3 px-4 mr-10">
+                    <button>login</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+       <div class="container mx-auto">
+            <div class="mx-10 design-total-item grid gap-5 grid-cols-4 grid-rows-2">
+                <div class="p-7 design-item bg-red-400 text-center">
+                    <img src="images/triangle.png" alt="">
+                    <h2 class="mt-7 mb-7 text-3xl font-semibold">Triangle</h2>
+                    <h3 class="mb-7">Area (A) =<span id="tringel-result">0.5*b*h</span> cm</h3>
+                    <input id="triangle-b-input" class="w-20" type="text" placeholder="b" >
+                    <span class="text-white mr-3">cm</span>
+                    <input id="triangle-h-input" class="w-20" type="text" placeholder="h" >
+                    <span class=" text-white mr-3">cm</span>
+                    <button id="triangle-button" class="mt-8 text-white text-2xl font-bold w-10/12 rounded-lg bg-green-300 h-10 float-center">Calculate</button>
+                </div>
+                <div class="p-7 design-item bg-red-400 text-center">
+                    <img src="images/rectangle.png" alt="">
+                    <h2 class="mt-7 mb-7 text-3xl font-semibold">Rectangle</h2>
+                    <h3 class="mb-7">Area (A) =<span id="rectangle-result">W*I</span> cm</h3>
+                    <input id="rectangle-W-input" class="w-20" type="text" placeholder="W" >
+                    <span class="text-white mr-3"> cm</span>
+                    <input id="rectangle-I-input"  class="w-20" type="text" placeholder="I" >
+                    <span class="text-white mr-3"> cm</span>
+                    <button id="rectangle-button"  class="mt-8 text-white text-2xl font-bold w-10/12 rounded-lg bg-green-300 h-10 float-center">Calculate</button>
+                </div>
+                <div class="p-7 design-item bg-red-400 text-center">
+                    <img src="images/Parallelogram.png" alt="">
+                    <h2 class="mt-7 mb-7 text-3xl font-semibold">Parallelogram</h2>
+                    <h3 class="mb-7">Area (A) =<span id="Parallelogram-result">B*H</span> cm</h3>
+                    <input id="Parallelogram-B-input" class="w-20" type="text" placeholder="b" >
+                    <span class="text-white mr-3">cm</span>
+                    <input id="Parallelogram-H-input" class="w-20" type="text" placeholder="h" >
+                    <span class="text-white mr-3">cm</span>
+                    <button id="Parallelogram-button" class="mt-8 text-white text-2xl font-bold w-10/12 rounded-lg bg-green-300 h-10 float-center">Calculate</button>
+                </div>
+               
+                <div class="row-span-2 ml-5" >
+                     <h3 class="mb-7 text-center text-3xl underline">Area Calculation</h3>
+                     <div>
+                        <ul id="calculation-list">
+                            
+                         </ul>
+                     </div>
+                </div>
+                <div class="p-7 design-item bg-red-400 text-center">
+                    <img src="images/Rhombus.png" alt="">
+                    <h2 class="mt-7 mb-7 text-3xl font-semibold">Rhombus</h2>
+                    <h3 class="mb-7">Area (A) =<span id="Rhombus-result">0.5*d1*d2 </span>  cm</h3>
+                    <input id="Rhombus-d1-input" class="w-20" type="text" placeholder="b" >
+                    <span  class="text-white mr-3">cm</span>
+                    <input id="Rhombus-d2-input" class="w-20" type="text" placeholder="h" >
+                    <span class="text-white mr-3">cm</span>
+                    <button id="Rhombus-button" class="mt-8 text-white text-2xl font-bold w-10/12 rounded-lg bg-green-300 h-10 float-center">Calculate</button>
+                </div>
+                <div class="p-7 design-item bg-red-400 text-center">
+                    <img src="images/Pentagon.png" alt="">
+                    <h2 class="mt-7 mb-7 text-3xl font-semibold">Pentagon</h2>
+                    <h3 class="mb-7">Area (A) =<span id="Pentagon-result">p*b</span>  cm</h3>
+                    <input id="Pentagon-p-input" class="w-20" type="text" placeholder="b" >
+                    <span class="text-white mr-3">cm</span>
+                    <input id="Pentagon-b-input" class="w-20" type="text" placeholder="h" >
+                    <span class="text-white mr-3">cm</span>
+                    <button id="Pentagon-button" class="mt-8 text-white text-2xl font-bold w-10/12 rounded-lg bg-green-300 h-10 float-center">Calculate</button>
+                </div>
+                <div class="p-7 design-item bg-red-400 text-center">
+                    <img src="images/Ellipse.png" alt="">
+                    <h2 class="mt-7 mb-7 text-3xl font-semibold">Ellipse</h2>
+                    <h3 class="mb-7">Area (A) =<span id="Ellipse-result">Area (A) = PI*a*b</span> cm</h3>
+                    <input id="Ellipse-a-input" class="w-20" type="text" placeholder="b" >
+                    <span class="text-white mr-3">cm</span>
+                    <input id="Ellipse-b-input" class="w-20" type="text" placeholder="h" >
+                    <span class="text-white mr-3">cm</span>
+                    <button id="Ellipse-button" class="mt-8 text-white text-2xl font-bold w-10/12 rounded-lg bg-green-300 h-10 float-center">Calculate</button>
+                </div>
+            </div>
+       </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>

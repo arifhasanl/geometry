@@ -1,0 +1,16 @@
+.convertBtn {
+	background: green;
+	color: white;
+	padding: 5px 12px;
+	border-radius: 10px;
+    float:right;
+}
+.liststyle{
+    height: 50px;
+    width:100%;
+	list-style-type: decimal
+}
+.spanStyle{
+text-align: center;
+color:red;
+}
